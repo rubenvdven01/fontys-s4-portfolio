@@ -1,0 +1,7 @@
+# Node Package Manager
+package-lock.json
+node_modules
+
+# Static files
+dist/js/*.js
+dist/css/*.css
