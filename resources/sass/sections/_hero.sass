@@ -1,0 +1,77 @@
+.hero
+    overflow: hidden
+    position: relative
+    padding: 8rem 10rem 12.5rem
+
+    &::before
+        top: 56.5%
+        left: -33%
+        rotate: 3deg
+        content: ""
+        z-index: -2
+        width: 100vw
+        height: 100vh
+        position: absolute
+        background-color: #f8f8f8
+
+    .h1
+        margin-bottom: 4rem
+
+    &__image
+        top: -2.5rem
+        rotate: 2deg
+        right: 27rem
+        width: 40rem
+        position: absolute
+        border-radius: 0 0 0 10rem
+
+    &__shape
+        opacity: .8
+        z-index: -1
+        width: 13rem
+        height: 13rem
+        position: absolute
+        animation: hover 5s infinite
+
+        &--triangle
+            width: 0
+            height: 0
+            top: 5.75rem
+            rotate: 29deg
+            left: 49.5rem
+            border-left: 7.5rem solid transparent
+            border-right: 7.5rem solid transparent
+            border-bottom: 15rem solid #FBD399
+
+        &--circle
+            top: 30rem
+            left: 64rem
+            border-radius: 50%
+            background-color: #A1C3FC
+
+            &:nth-child(2)
+                top: 12rem
+                right: 20rem
+                left: initial
+                background-color: #B6E8D7
+
+        &--rectangle
+            right: 7.5rem
+            bottom: -2rem
+            height: 13rem
+            rotate: -7deg
+            background-color: #DFF5D6
+
+@keyframes hover
+    0%
+        translate: 0 0
+
+    25%
+        translate: .1rem .2rem
+
+    75%
+        translate: -.2rem -.1rem
+        
+    100%
+        translate: 0 0
+        

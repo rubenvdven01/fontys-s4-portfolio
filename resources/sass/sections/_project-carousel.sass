@@ -1,0 +1,107 @@
+.project-carousel
+    top: 50%
+    left: 100%
+    display: flex
+    position: absolute
+    will-change: transform
+    transform: translate(0, -50%)
+
+    &__wrapper
+        width: 100vw
+        height: 33.34vw
+        overflow: hidden
+        position: relative
+
+    &__item
+        display: flex
+        width: 33.34vw
+        height: 33.34vw
+        padding: 5rem 0
+        overflow: hidden
+        position: relative
+        align-items: center
+        justify-content: center
+
+.eventix-video
+    display: block
+    margin: -.1rem 0
+    height: calc(100vw / 3 - 10rem)
+
+    &__wrapper
+        height: 100%
+        overflow: hidden
+        min-width: 22.7rem
+        margin-right: 3.5rem
+
+    &__carousel
+        height: 100%
+        display: flex
+        translate: 0 0
+        overflow: hidden
+        margin-left: 5rem
+
+        &-slider
+            display: flex
+            justify-content: flex-start
+
+.rh
+    &-screencapture
+        top: 12rem
+        width: 30rem
+        left: 8.75rem
+        rotate: -6deg
+        position: absolute
+
+    &-phone
+        left: 51.5%
+        rotate: 6deg
+        bottom: -5rem
+        width: 17.5rem
+        position: absolute
+
+.hdn-laptop
+    top: 9.25rem
+    rotate: -6deg
+    right: -10rem
+    width: 52.5rem
+    position: absolute
+    transform-origin: 50% 50%
+    animation: shake 5s .5s linear infinite
+
+.s2, .cbr div
+    display: flex
+    align-items: center
+    justify-content: center
+
+.s2
+    &-video
+        border-radius: 1.5rem
+        width: calc(100% - 7.5rem)
+
+.cbr
+    padding: 5rem
+
+    div
+        border-radius: 2.5rem
+
+    img
+        border-radius: 5rem
+        height: calc(100vw / 3 - 10rem)
+
+@keyframes shake
+    0%
+        rotate: -6deg
+        translate: 0 0
+
+    25%
+        rotate: -7deg
+        translate: 0 .25rem
+
+    75%
+        rotate: -5deg
+        translate: 0 -.25rem
+
+    100%
+        rotate: -6deg
+        translate: 0 0
+    
